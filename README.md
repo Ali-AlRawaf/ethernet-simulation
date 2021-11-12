@@ -9,7 +9,7 @@
 `transmit(lam, time)`
 
 - expects a float value for `lam` and `time`
-- gets a random value `u` between 0 and 1 using math.random, which uses Mersenne Twister as its RNG
+- gets a random value `u` between 0 and 1 using `random`, which uses Mersenne Twister as its RNG
 - calculates a random amount of milliseconds using formula `x = -lam * log(u)`, and scales `x` down to slot times
 - returns the new time value `t = time + x`, and whether a transmission at `t` would collide with the last transmission, which occured at `time`
 
